@@ -3,6 +3,7 @@ import HeroSection from './Components/HeroSection'
 import Navbar from './Components/NavBar'
 import AboutSection from './Components/AboutSection'
 import Skills from './Components/Skills'
+import { skills } from './Editable/Config'
 
 
 export default function Home() {
@@ -13,10 +14,10 @@ export default function Home() {
       <HeroSection/>
       <AboutSection />
       <Skills
-          // heading={skills.heading}
-          // hardSkills={skills.hardSkills}
-          // softSkills={skills.softSkills}
-        />
+          heading={skills.heading}
+          hardSkills={skills.hardSkills}
+          softSkills={skills.softSkills}
+        /> 
       </div>
     </main>
   )

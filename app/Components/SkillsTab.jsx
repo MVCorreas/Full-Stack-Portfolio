@@ -1,7 +1,7 @@
 import React from "react";
 import Col from "react-bootstrap/Col";
 import SkillsBar from "./SkillsBar";
-import { skills } from "../Editable/Config";
+import '../Styles/_index.scss'
 
 function SkillsSection({ skills, isScrolled }) {
   

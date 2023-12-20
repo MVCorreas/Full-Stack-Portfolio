@@ -1,0 +1,21 @@
+.skillsTabs {
+    flex-grow: 1;
+  }
+  
+  .skillsTab {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .progress {
+    transform-origin: left;
+  }
+  
+  .progress > * {
+    transform: scaleX(0);
+  }
+  
+  .progressBarAnimation > * {
+    animation: progress 1.5s ease-in-out forwards;
+  }
+  
