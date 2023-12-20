@@ -58,13 +58,13 @@ const AboutSection = () => {
   return (
     <section className="text-slate-900" id="about">
     <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-      <div className="relative">
+      <div className="w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
         <Image 
         src="/AboutMe.jpeg" 
         alt="aboutImage"
         width={500} 
         height={500}
-        className="rounded-full position-fixed" />
+        className="rounded-full absolute" />
         </div>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600 mb-4">About Me</h2>
@@ -81,13 +81,13 @@ const AboutSection = () => {
             line results.
           </p>
           <div className="flex flex-row justify-start mt-8 text-2xl">
-            <TabButton
+            {/* <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
               {" "}
               Skills{" "}
-            </TabButton>
+            </TabButton> */}
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}

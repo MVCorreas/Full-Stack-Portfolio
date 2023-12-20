@@ -4,6 +4,7 @@ import Navbar from './Components/NavBar'
 import AboutSection from './Components/AboutSection'
 import Skills from './Components/Skills'
 import { skills } from './Editable/Config'
+import ProjectsSection from './Components/ProjectsSection'
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
           hardSkills={skills.hardSkills}
           softSkills={skills.softSkills}
         /> 
+      <ProjectsSection />
       </div>
     </main>
   )
