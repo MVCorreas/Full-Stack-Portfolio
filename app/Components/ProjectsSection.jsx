@@ -17,7 +17,7 @@ const projectsData = [
   {
     id: 2,
     title: "Countrypedia",
-    description: "Individual Project, HENRY, 2023. SPA using React, NodeJS, Express, SQL and CSS Frameworks.",
+    description: "Individual Project, HENRY, 2023. SPA using React, NodeJS, Express, SQL and pure CSS.",
     image: "/Countrypedia.png",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/MVCorreas/ProyectoIntegrador-Countries",
@@ -26,11 +26,11 @@ const projectsData = [
   {
     id: 3,
     title: "Woofer",
-    description: "Group Project, HENRY, 2023. SPA using NextJS, Express, SQL, Bootstrap, among others.",
+    description: "Group Project, HENRY, 2023. SPA using NextJS14, Express, SQL, Tailwind, among others.",
     image: "/Woofer.png",
     tag: ["All", "Web", "Mobile"],
-    gitUrl: "https://github.com/MVCorreas/Proyecto-Integrador",
-    previewUrl: "https://www.youtube.com/watch?v=miwCapuD9f8",
+    gitUrl: "https://github.com/germiiii/Woofer",
+    previewUrl: "/",
   }
 ]
 

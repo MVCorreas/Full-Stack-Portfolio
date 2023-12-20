@@ -5,6 +5,7 @@ import AboutSection from './Components/AboutSection'
 import Skills from './Components/Skills'
 import { skills } from './Editable/Config'
 import ProjectsSection from './Components/ProjectsSection'
+import Footer from './Components/Footer'
 
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
           softSkills={skills.softSkills}
         /> 
       <ProjectsSection />
+      <Footer />
       </div>
     </main>
   )
