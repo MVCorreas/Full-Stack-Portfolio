@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className='grid grid-cols-1 lg:grid-cols-12'>
         <div className='lg:col-span-7 place-self-center text-center sm:text-left'>
           <h1 className='text-black mb-4 text-4xl lg:text-6xl font-extrabold'>
-            <div className='text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-red-600'> Hello, I'm{" "}
+            <div className='text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-red-600'> Hello, I&apos;m{" "}
             </div>
 
             <TypeAnimation
@@ -33,8 +33,9 @@ const HeroSection = () => {
            
           </h1>
           <p className='text-black text-base sm:text-lg mb-6 lg:text-xl'>
-          “Nothing is impossible, the word itself says ‘ I’m possible.’ ” — Audrey Hepburn 
-          </p>
+  &quot;Nothing is impossible, the word itself says &apos;I&apos;m possible.&apos;&quot; — Audrey Hepburn
+</p>
+
           <div className='flex flex-col lg:flex-row'>
             <Link href={'https://www.linkedin.com/in/mar%C3%ADa-victoria-correas-148049b2/'}>
             <button className='px-6 py-3 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br  from-yellow-500 via-amber-500 to-red-500 hover:bg-slate-200 text-white '>

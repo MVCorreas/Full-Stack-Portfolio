@@ -56,4 +56,6 @@ const Skills = React.forwardRef(({ heading, hardSkills, softSkills }, ref) => {
   );
 });
 
+Skills.displayName = 'Skills'
+
 export default Skills;

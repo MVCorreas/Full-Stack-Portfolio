@@ -12,6 +12,8 @@ export const Jumbotron = React.forwardRef((props, ref) => {
   );
 });
 
+Jumbotron.displayName = 'Jumbotron'; 
+
 export const NavLink = React.forwardRef((props, ref) => {
   return (
     <Nav.Link
@@ -26,3 +28,5 @@ export const NavLink = React.forwardRef((props, ref) => {
     </Nav.Link>
   );
 });
+
+NavLink.displayName = 'NavLink';
