@@ -1,20 +1,21 @@
 import React from 'react';
 import Nav from "react-bootstrap/Nav";
 
-export const Jumbotron = (props) => {
+export const Jumbotron = React.forwardRef((props, ref) => {
   const bgStyle = props.style ?? { backgroundColor: "#e9ecef" };
   return (
-    <div id={props.id} className={`py-3 ${props.className}`} style={bgStyle}>
+    <div ref={ref} id={props.id} className={`py-3 ${props.className}`} style={bgStyle}>
       <div className="container py-5">
         {props.children}
       </div>
     </div>
   );
-}
+});
 
-export const NavLink = (props) => {
+export const NavLink = React.forwardRef((props, ref) => {
   return (
     <Nav.Link
+      ref={ref}
       href={props.href}
       target={props.target}
       rel={props.rel}
@@ -24,4 +25,4 @@ export const NavLink = (props) => {
       </span>
     </Nav.Link>
   );
-}
+});
