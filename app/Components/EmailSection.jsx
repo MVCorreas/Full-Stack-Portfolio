@@ -235,8 +235,7 @@ export default function EmailSection() {
         </h5>
         <p className="text-black mb-4 max-w-md">
           {" "}
-          I&apos;m currently looking for new opportunities, my inbox is always
-          open. You can contact me for further information. I&apos;ll get back to with asap.
+          I&apos;m currently looking for new opportunities. You can contact me for further information. I&apos;ll get back to you asap.
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/MVCorreas">
@@ -263,7 +262,7 @@ export default function EmailSection() {
                 id="email"
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="jacob@google.com"
+                placeholder="email@google.com"
               />
             </div>
             <div className="mb-6">
