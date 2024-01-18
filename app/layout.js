@@ -12,7 +12,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <div className='Whatsapp-container'>
+          <a href='http://wa.me/+5492615520011' target='blanket' className='whatsapp-icon'>
+            <img className='img-Whatsapp' src='./Whatsapp-icon.png' alt='' />
+          </a>
+        </div>
+      </body>
     </html>
   )
 }
