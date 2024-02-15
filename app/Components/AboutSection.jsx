@@ -69,16 +69,11 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600 mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a Full-Stack developer with a university degree in English and broad
-            experience in English-Spanish teaching and translation. Intensive
-            training in Back-end, Front-end, and Database, using technologies
-            such as NodeJS, React-Redux, VITE, and SQL. Vast knowledge of GIT,
-            JAVA, Javascript, among others; and a true passion for CSS
-            Frameworks. Goal-oriented, proactive, fast-learning, perseverant,
-            and well-organized professional with a native-like level of English
-            bestowed by the University of Cambridge. Extremely competent
-            team-member dedicated to any job given to positively impact bottom
-            line results.
+          I am a driven Full Stack Developer with a unique blend of language expertise and coding proficiency. 
+          Skilled in React.js, Next.js, Node.js, HTML, CSS, and WordPress, among others, I specialize in creating appealing interfaces and optimizing user performance. 
+          My background in English translation enhances my clear communication, bridging diverse perspectives in global software development. 
+          Along with freelance Front End work, I am advancing my skills with a Web and Mobile Design course. 
+          I am commited to ongoing learning and excited to contribute my evolving expertise to dynamic teams.
           </p>
           <div className="flex flex-row justify-start mt-8 text-2xl">
             {/* <TabButton
