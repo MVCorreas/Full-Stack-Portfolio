@@ -28,14 +28,14 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed mx-auto top-0 left-0 right-0 z-10" style={{ backgroundColor: 'rgba(247, 246, 244, 0.618)'}}>
+    <nav className="fixed mx-auto top-0 left-0 right-0 z-10" style={{ backgroundColor: 'rgba(247, 246, 244, 0.618)', height: '80px'}}>
 
 
-      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
+      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto py-1" style={{ height: '100%'}}>
         <Link
           href={"/"}
-          className="text-2xl md:text-4xl text-black font-semibold"
-          style={{ textDecoration: 'none' }}
+          className="text-2xl md:text-4xl text-black font-semibold flex items-center" /* Center text vertically */
+          style={{ textDecoration: 'none', height: '100%'}} /* Make link take up full height */
         >
           PORTFOLIO
         </Link>
