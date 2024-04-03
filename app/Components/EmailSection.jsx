@@ -175,60 +175,12 @@ export default function EmailSection() {
     }
   };
   
-  // return (
-  //   <main className="flex min-h-screen flex-col items-center justify-center p-24">
-  //     <form onSubmit={sendMail} className="h-full w-1/3 space-y-6">
-  //       <div className="flex flex-col items-start w-full justify-start">
-  //         <h1 className="text-xl font-semibold">Tutorial Email</h1>
-  //       </div>
-  //       <div className="relative flex flex-col space-y-1">
-  //         <label htmlFor="title" className="text-sm font-light text-gray-500">
-  //           Subject
-  //         </label>
-  //         <input
-  //           name="title"
-  //           type="text"
-  //           id="title"
-  //           required
-  //           value={subject}
-  //           onChange={(e) => {
-  //             setSubject(e.target.value)
-  //           }}
-  //           placeholder="What will you title this goal?"
-  //           className="rounded-xl border-2 border-gray-400 p-2"
-  //         />
-  //       </div>
-  //       <div className="relative flex flex-col space-y-1">
-  //         <label htmlFor="title" className="text-sm font-light text-gray-500">
-  //           What would you need help with?
-  //         </label>
-  //         <textarea
-  //           name="description"
-  //           id="description"
-  //           required
-  //           cols={10}
-  //           rows={5}
-  //           value={message}
-  //           onChange={(e) => {
-  //             setMessage(e.target.value)
-  //           }}
-  //           placeholder="What will you title this goal?"
-  //           className="rounded-xl border-2 border-gray-400 p-2"
-  //         />
-  //       </div>
-  //       <button type='submit' className="ml-auto flex w-1/2 items-center justify-center space-x-3 rounded-lg bg-blue-600 p-2 text-white shadow-blue-500 hover:bg-blue-700 hover:shadow-md">
-  //         <span>Send Message</span>
-  //       </button>
-  //     </form>
-  //   </main>
-  // )
-
   return (
     <section
       id="contact"
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
     >
-      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-200 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
+
       <div className="z-10">
         <h5 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600 mb-4">
           Let`s Connect

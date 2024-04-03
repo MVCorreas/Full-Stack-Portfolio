@@ -7,7 +7,7 @@ const variants = {
 };
 
 const TabButton = ({ active, selectTab, children }) => {
-  const buttonClasses = active ? "text-pink-900" : "text-[#ADB7BE]";
+  const buttonClasses = active ? "text-orange-300" : "text-[#ADB7BE]";
   const underlineClasses = active ? "h-1 bg-primary-500 mt-2" : "h-1 bg-transparent mt-2";
 
   return (

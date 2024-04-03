@@ -1,10 +1,8 @@
-html {
-    font-size: 14px;
-    @media (min-width: 768px) {
-      font-size: 16px;
-    }
-    scroll-behavior: smooth;
-  }
+html, body {
+  margin: 0;
+  padding: 0;
+  
+}
   
   body {
     margin: 0;
@@ -13,6 +11,7 @@ html {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    
   }
   
   code {
@@ -21,37 +20,15 @@ html {
   }
   
   .bgstyle {
-    /* background: linear-gradient(136deg, #1ad7c0, #8E44AD, #ff9b11, #1F3A93, #ddd8c6, #000000, #000000);  */
-    /*background: linear-gradient(
-      136deg,
-      #4484ce,
-      #1ad7c0,
-      #ff9b11,
-      #9b59b6,
-      #ff7f7f,
-      #ecf0f1
-    );*/
-  
-    background-size: 1200% 1200%;
-    -webkit-animation: BackgroundAnimation 70s ease infinite;
-    -moz-animation: BackgroundAnimation 70s ease infinite;
-    -o-animation: BackgroundAnimation 70s ease infinite;
-    animation: BackgroundAnimation 70s ease infinite;
-    height: 100%;
+    background-color: #dddddd; /* Grey background color */
+    height: 100vh; /* Set height to cover entire viewport */
+    margin: 0; /* Remove default margin */
   }
   
   .bg-gradient {
     background: linear-gradient(rgba(245, 245, 245, 1), rgba(245, 245, 245, 0));
   }
   
-  .navbar-transparent {
-    background-color: rgba(255, 255, 255, 0);
-    transition: background-color 0.2s;
-  }
-  .navbar-white {
-    background-color: rgba(234, 236, 239, 0.81);
-    transition: background-color 0.2s;
-  }
   .brand {
     color: #363636 !important;
   }
@@ -129,4 +106,5 @@ html {
       animation: progress 1.5s ease-in-out forwards;
     }
   }
+
   
