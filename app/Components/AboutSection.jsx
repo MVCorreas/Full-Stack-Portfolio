@@ -58,7 +58,7 @@ const AboutSection = () => {
   return (
     <section className="text-slate-900" id="about">
     <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-      <div className="w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+      <div className="w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative border-8 border-white rounded-full">
         <Image 
         src="/AboutMe.jpeg" 
         alt="aboutImage"
@@ -76,13 +76,7 @@ const AboutSection = () => {
           I am commited to ongoing learning and excited to contribute my evolving expertise to dynamic teams.
           </p>
           <div className="flex flex-row justify-start mt-8 text-2xl">
-            {/* <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
-            >
-              {" "}
-              Skills{" "}
-            </TabButton> */}
+        
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
