@@ -28,7 +28,7 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed mx-auto top-0 left-0 right-0 z-10" style={{ backgroundColor: 'rgba(247, 246, 244, 0.618)', height: '80px'}}>
+    <nav className="fixed mx-auto top-0 left-0 right-0 z-10 bg-gray-100 bg-opacity-90" style={{ height: '80px'}}>
 
 
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto py-1" style={{ height: '100%'}}>
@@ -40,21 +40,21 @@ const Navbar = () => {
           PORTFOLIO
         </Link>
         <div className="mobile-menu block md:hidden">
-          {/* {!navbarOpen ? (
+          {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+              className="flex items-center px-3 py-2 border rounded border-slate-600 text-slate-600 hover:text-black hover:border-black"
             >
               <Bars3Icon className="h-5 w-5" />
             </button>
           ) : (
             <button
               onClick={() => setNavbarOpen(false)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+              className="flex items-center px-3 py-2 border rounded border-slate-600 text-slate-600 hover:text-black hover:border-black"
             >
               <XMarkIcon className="h-5 w-5" />
             </button>
-          )} */}
+          )}
         </div>
         <div className="menu hidden md:block md:w-auto" id="navbar">
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
