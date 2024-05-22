@@ -21,7 +21,7 @@ const projectsData = [
     image: "/Countrypedia.png",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/MVCorreas/ProyectoIntegrador-Countries",
-    previewUrl: "/",
+    previewUrl: "https://www.loom.com/share/ffb66b7c5bd945e9815fa114ba832345?sid=1956ede1-c679-4335-81bd-3586e0798ecd",
   },
   {
     id: 3,
@@ -30,7 +30,16 @@ const projectsData = [
     image: "/Woofer.png",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/germiiii/Woofer",
-    previewUrl: "/",
+    previewUrl: "https://woofer-taupe.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "DecoPalets",
+    description: "Experimental project using technologies such as NextJS, Tailwind, MongoDB, and others. It resembles an e-commerce website using Paypal.",
+    image: "/Decopalets.png",
+    tag: ["All", "Web", "Mobile"],
+    gitUrl: "https://github.com/MVCorreas/Next-Decopalets-Ts",
+    previewUrl: "https://next-decopalets-ts.vercel.app/",
   }
 ]
 

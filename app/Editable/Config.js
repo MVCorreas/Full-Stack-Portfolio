@@ -6,8 +6,8 @@
     heading: "Skills",
     hardSkills: [
       { name: "Javascript", value: 90 },
-      { name: "Figma", value: 70 },
-      { name: "UX UI Web Design", value: 85 },
+      { name: "Typescript", value: 60 },
+      { name: "Tailwind", value: 85 },
       { name: "NextJs", value: 65 },
       { name: "React", value: 90 },
       { name: "NodeJs", value: 85 },

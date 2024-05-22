@@ -35,11 +35,13 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>Full Stack Developer, HENRY</li>
-        <li>Porgamming Basics, Egg Education</li>
-        <li>JAVA, Edutin Academy</li>
+        <li>Full Stack Developer - Henry</li>
+        <li>Porgamming Basics - Egg Education</li>
+        <li>Intro to Java -  Edutin Academy</li>
+        <li>Data Structures and Backend with Java - Coursera</li>
+        {/* <li>UX UI Web and Mobile Design - UDEMY</li>
+        <li>Flutter - UDEMY</li> */}
         <li>Certificate of Proficiency in English, Cambridge University</li>
-        <li>Moodle for Teachers, British Council Argentina</li>
       </ul>
     ),
   },
@@ -70,7 +72,7 @@ const AboutSection = () => {
           <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600 mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
           I am a driven Full Stack Developer with a unique blend of language expertise and coding proficiency. 
-          Skilled in React.js, Next.js, Node.js, HTML, CSS, and WordPress, among others, I specialize in creating appealing interfaces and optimizing user performance. 
+          Skilled in React.js, Next.js, Node.js, HTML, CSS, and Javascript, among others, I specialize in creating appealing interfaces and optimizing user performance. 
           My background in English translation enhances my clear communication, bridging diverse perspectives in global software development. 
           Along with freelance Front End work, I am advancing my skills with a Web and Mobile Design course. 
           I am commited to ongoing learning and excited to contribute my evolving expertise to dynamic teams.
