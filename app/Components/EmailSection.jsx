@@ -182,7 +182,7 @@ export default function EmailSection() {
     >
 
       <div className="z-10">
-        <h5 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600 mb-4">
+        <h5 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#a72848] via-[#ffcccc] to-[#ffeecc] mb-4">
           Let`s Connect
         </h5>
         <p className="text-black mb-4 max-w-md">
@@ -257,7 +257,7 @@ export default function EmailSection() {
             </div>
             <button
               type="submit"
-              className="bg-gradient-to-r from-yellow-500 via-amber-500 to-red-500 text-white hover:bg-yellow-300 hover:text-black font-medium py-2.5 px-5 rounded-lg w-full"
+              className="bg-gradient-to-r  from-[#a72848] via-[#ffcccc] to-[#ffeecc] text-white hover:bg-yellow-300 hover:text-black font-medium py-2.5 px-5 rounded-lg w-full"
             >
               Send Message
             </button>

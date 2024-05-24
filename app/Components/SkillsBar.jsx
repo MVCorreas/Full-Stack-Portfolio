@@ -9,7 +9,7 @@ function SkillsBar({ skill, value, isScrolled }) {
         <div
           className={`h-full ${
             !isScrolled ? "w-0" : "w-full transition-all duration-3000 ease-in-out"
-          } bg-yellow-500`}
+          } bg-[#bc153f]`}
           style={{ width: `${value}%` }}
         />
       </div>

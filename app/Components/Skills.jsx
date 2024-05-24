@@ -23,19 +23,21 @@ const Skills = React.forwardRef(({ heading, hardSkills, softSkills }, ref) => {
   return (
     <Jumbotron ref={skillsTabRef} fluid className="bg-white m-0" id="skills" style={{ borderRadius: "20px" }}>
       <Container className="p-5 ">
-        <h1 ref={skillsTabRef} className=" text-center text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600 mb-4">
+        <h1 ref={skillsTabRef} className=" text-center text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#a72848] to-[#ffcccc] mb-4">
           {heading}
         </h1>
         <Tabs
-          className="skills-tabs text-2xl"
+          className="skills-tabs text-2xl "
           defaultActiveKey="hard-skills"
           id="skills-tabs"
           fill
+          
         >
           <Tab
             tabClassName="skills-tab lead"
             eventKey="hard-skills"
             title="Technical Skills"
+           
           >
             <Row className="pt-3 px-1">
               <SkillsTab skills={hardSkills} isScrolled={isScrolled} />

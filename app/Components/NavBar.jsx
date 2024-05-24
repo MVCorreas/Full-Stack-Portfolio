@@ -28,7 +28,7 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed mx-auto top-0 left-0 right-0 z-10 bg-gray-100 bg-opacity-90" style={{ height: '80px'}}>
+    <nav className="fixed mx-auto top-0 left-0 right-0 z-10  bg-[#ffcccc] bg-opacity-90" style={{ height: '80px'}}>
 
 
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto py-1" style={{ height: '100%'}}>

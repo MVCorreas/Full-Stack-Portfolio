@@ -11,7 +11,7 @@ import EmailSection from './Components/EmailSection'
 
 export default function Home() {
   return (
-    <main className="flex flex-col bg-slate-200 min-h-screen ">
+    <main className="flex flex-col bg-[#ffefd1] min-h-screen ">
        <Navbar />
        <div className="container mt-24 mx-auto px-12 py-4">
       <HeroSection/>

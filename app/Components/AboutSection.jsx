@@ -60,7 +60,7 @@ const AboutSection = () => {
   return (
     <section className="text-slate-900" id="about">
     <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-      <div className="w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative border-8 border-white rounded-full">
+      <div className="w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative border-8 border-[#febbcc] rounded-full">
         <Image 
         src="/AboutMe.jpeg" 
         alt="aboutImage"
@@ -69,7 +69,7 @@ const AboutSection = () => {
         className="rounded-full absolute" />
         </div>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600 mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#a72848] via-[#ffcccc] to-[#ffeecc] mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
           I am a driven Full Stack Developer with a unique blend of language expertise and coding proficiency. 
           Skilled in React.js, Next.js, Node.js, HTML, CSS, and Javascript, among others, I specialize in creating appealing interfaces and optimizing user performance. 
