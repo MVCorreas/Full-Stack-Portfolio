@@ -17,7 +17,7 @@ const projectsData = [
   {
     id: 2,
     title: "Countrypedia",
-    description: "Individual Project, HENRY, 2023. SPA using React, NodeJS, Express, SQL and pure CSS.",
+    description: "Individual Project, HENRY, 2023. SPA using React, NodeJS, Express, PostgreSQL and pure CSS.",
     image: "/Countrypedia.png",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/MVCorreas/ProyectoIntegrador-Countries",
@@ -26,7 +26,7 @@ const projectsData = [
   {
     id: 3,
     title: "Woofer",
-    description: "Group Project, HENRY, 2023. SPA using NextJS14, Express, SQL, Tailwind, among others.",
+    description: "Group Project, HENRY, 2023. SPA using NextJS14, Express, PostgreSQL, Tailwind, among others.",
     image: "/Woofer.png",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/germiiii/Woofer",
@@ -35,7 +35,7 @@ const projectsData = [
   {
     id: 4,
     title: "DecoPalets",
-    description: "Experimental project using technologies such as NextJS, Tailwind, MongoDB, and others. It resembles an e-commerce website using Paypal.",
+    description: "Experimental project using technologies such as NextJS, Tailwind, MongoDB, and others. It resembles an e-commerce website using Paypal (in progress).",
     image: "/Decopalets.png",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/MVCorreas/Next-Decopalets-Ts",
