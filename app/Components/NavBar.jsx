@@ -34,16 +34,16 @@ const Navbar = () => {
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto py-1" style={{ height: '100%'}}>
         <Link
           href={"/"}
-          className="text-2xl md:text-4xl text-black font-semibold flex items-center" /* Center text vertically */
-          style={{ textDecoration: 'none', height: '100%'}} /* Make link take up full height */
+          className="text-2xl md:text-4xl text-black font-semibold flex items-center" 
+          style={{ textDecoration: 'none', height: '100%'}} 
         >
           PORTFOLIO
         </Link>
-        <div className="mobile-menu block md:hidden">
+        <div className="mobile-menu block md:hidden ">
           {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
-              className="flex items-center px-3 py-2 border rounded border-slate-600 text-slate-600 hover:text-black hover:border-black"
+              className="flex items-center px-3 py-2 border rounded  border-slate-600 text-slate-600 hover:text-black hover:border-black"
             >
               <Bars3Icon className="h-5 w-5" />
             </button>
@@ -56,8 +56,8 @@ const Navbar = () => {
             </button>
           )}
         </div>
-        <div className="menu hidden md:block md:w-auto" id="navbar">
-          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
+        <div className="menu hidden md:block md:w-auto " id="navbar"  >
+          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0 ">
             {navLinks.map((link, index) => (
               <li key={index}>
                 <NavLink href={link.path} title={link.title} style={{ textDecoration: 'none' }}/>

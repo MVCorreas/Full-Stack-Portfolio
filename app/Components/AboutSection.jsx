@@ -60,7 +60,7 @@ const AboutSection = () => {
   return (
     <section className="text-slate-900" id="about">
     <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-      <div className="w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative border-8 border-[#febbcc] rounded-full">
+      <div className="w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative border-8 border-[#a72848] rounded-full">
         <Image 
         src="/AboutMe.jpeg" 
         alt="aboutImage"

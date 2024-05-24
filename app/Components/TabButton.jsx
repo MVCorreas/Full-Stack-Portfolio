@@ -1,10 +1,10 @@
 
 import React from "react";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 
 const variants = {
-  default: { width: 0, color: "#febbcc" }, // Set default color
-  active: { width: "calc(100% - 0.75rem)", color: "#bc153f" }, // Set active color to pink
+  default: { width: 0}, // Set default color
+  active: { width: "calc(100% - 0.75rem)"}, // Set active color to pink
 };
 
 const TabButton = ({ active, selectTab, children }) => {
@@ -19,7 +19,7 @@ const TabButton = ({ active, selectTab, children }) => {
       <motion.div
         animate={active ? "active" : "default"}
         variants={variants}
-        className="transition-transform transform"
+        className={`transition-transform transform ${underlineClasses}`}
       ></motion.div>
     </button>
   );

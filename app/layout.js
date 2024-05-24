@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import './Styles/custom.scss'
+import Image from 'next/image'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +17,12 @@ export default function RootLayout({ children }) {
         {children}
         <div className='Whatsapp-container'>
           <a href='http://wa.me/+5492615520011' target='blanket' className='whatsapp-icon'>
-            <img className='img-Whatsapp' src='./Whatsapp-icon.png' alt='' />
+            <Image 
+            className='img-Whatsapp' 
+            src='/Whatsapp-icon.png' 
+            alt=''
+            width={50} height={50} 
+            />
           </a>
         </div>
       </body>
