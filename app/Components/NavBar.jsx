@@ -39,18 +39,18 @@ const Navbar = () => {
         >
           PORTFOLIO
         </Link>
-        <div className="mobile-menu block md:hidden ">
+        <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
-              className="flex items-center px-3 py-2 border rounded  border-slate-600 text-slate-600 hover:text-black hover:border-black"
+              className="flex items-center px-3 py-2 border rounded  border-black text-slate-600 hover:text-black hover:border-black"
             >
               <Bars3Icon className="h-5 w-5" />
             </button>
           ) : (
             <button
               onClick={() => setNavbarOpen(false)}
-              className="flex items-center px-3 py-2 border rounded border-slate-600 text-slate-600 hover:text-black hover:border-black"
+              className="flex items-center px-3 py-2 border rounded border-black text-slate-600 hover:text-black hover:border-black"
             >
               <XMarkIcon className="h-5 w-5" />
             </button>
