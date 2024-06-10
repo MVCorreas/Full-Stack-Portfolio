@@ -74,7 +74,7 @@ const AboutSection = () => {
           I am a driven Full Stack Developer with a unique blend of language expertise and coding proficiency. 
           Skilled in React.js, Next.js, Node.js, HTML, CSS, and Javascript, among others, I specialize in creating appealing interfaces and optimizing user performance. 
           My background in English translation enhances my clear communication, bridging diverse perspectives in global software development. 
-          Along with freelance Front End work, I am advancing my skills with a Web and Mobile Design course. 
+          Along with freelance Front End work, I have recently completed a Web and Mobile Design course and a Backend with Java course. 
           I am commited to ongoing learning and excited to contribute my evolving expertise to dynamic teams.
           </p>
           <div className="flex flex-row justify-start mt-8 text-2xl">
