@@ -39,8 +39,8 @@ const TAB_DATA = [
         <li>Porgamming Basics - Egg Education</li>
         <li>Intro to Java -  Edutin Academy</li>
         <li>Data Structures and Backend with Java - Coursera</li>
-        {/* <li>UX UI Web and Mobile Design - UDEMY</li>
-        <li>Flutter - UDEMY</li> */}
+         <li>UX UI Web and Mobile Design - UDEMY</li>
+        {/* <li>Flutter - UDEMY</li> */}
         <li>Certificate of Proficiency in English, Cambridge University</li>
       </ul>
     ),
