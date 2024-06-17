@@ -40,6 +40,15 @@ const projectsData = [
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/MVCorreas/Next-Decopalets-Ts",
     previewUrl: "https://next-decopalets-ts.vercel.app/",
+  },
+  {
+    id: 5,
+    title: "About Me",
+    description: "Experimental website built on SquareSpace. Just a few lines that relfect my inspiration and my path toward development.",
+    image: "/SquareSpace.png",
+    tag: ["All", "Web", "Mobile"],
+    gitUrl: "https://github.com/MVCorreas",
+    previewUrl: "https://www.squarespace.com/",
   }
 ]
 
