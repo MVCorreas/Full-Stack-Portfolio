@@ -29,15 +29,15 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#a8dadc] bg-opacity-90 h-20">
-    <div className="container mx-auto flex justify-between h-full items-center">
-      <div className="flex items-center">
+    <nav className="fixed mx-auto top-0 left-0 right-0 z-10 bg-[#a8dadc] bg-opacity-90 h-20">
+    <div className="flex lg:py-4 items-center justify-between mx-auto" style={{ height: '100%'}}>
+      <div className="flex container items-center">
         <Image 
         src="/Logo.png" 
         alt="aboutImage"
         width={110} 
         height={110}
-        className="rounded-full left-0 mr-4" />
+        className="rounded-full mr-4" />
         <Link
           href={"/"}
           className="text-2xl md:text-4xl text-[#1d3557] left-30 font-semibold flex items-center" 
