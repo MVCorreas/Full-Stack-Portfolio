@@ -25,7 +25,7 @@ body {
     to bottom,
     transparent,
     rgb(var(--background-end-rgb))
-  ) rgb(var(--background-start-rgb));
+  ) rgb(var(--background-start-rgb))
   
 }
 
@@ -43,7 +43,7 @@ a.whatsapp-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0e5048;
+  background-color: #1d3557;
   border-radius: 50%;
   padding: 20px;
   transition: background-color 0.3s ease;

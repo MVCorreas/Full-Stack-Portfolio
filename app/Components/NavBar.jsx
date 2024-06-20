@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
+import Image from "next/image";
 
 const navLinks = [
   {
@@ -28,10 +29,16 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed mx-auto top-0 left-0 right-0 z-10  bg-[#ffcccc] bg-opacity-90" style={{ height: '80px'}}>
+    <nav className="fixed mx-auto top-0 left-0 right-0 z-10  bg-[#a8dadc] bg-opacity-90" style={{ height: '80px'}}>
 
 
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto py-1" style={{ height: '100%'}}>
+      <Image 
+        src="/Logo.png" 
+        alt="aboutImage"
+        width={110} 
+        height={110}
+        className="rounded-full absolute left-20" />
         <Link
           href={"/"}
           className="text-2xl md:text-4xl text-black font-semibold flex items-center" 

@@ -69,7 +69,7 @@ const AboutSection = () => {
         className="rounded-full absolute" />
         </div>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#a72848] via-[#ffcccc] to-[#ffeecc] mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#a8dadc] via-[#457b9d] to-[#1d3557] mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
           I am a driven Full Stack Developer with a unique blend of language expertise and coding proficiency. 
           Skilled in React.js, Next.js, Node.js, HTML, CSS, and Javascript, among others, I specialize in creating appealing interfaces and optimizing user performance. 
