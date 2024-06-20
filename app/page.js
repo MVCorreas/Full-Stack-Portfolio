@@ -7,6 +7,8 @@ import { skills } from './Editable/Config'
 import ProjectsSection from './Components/ProjectsSection'
 import Footer from './Components/Footer'
 import EmailSection from './Components/EmailSection'
+import Head from 'next/head';
+
 
 
 export default function Home() {

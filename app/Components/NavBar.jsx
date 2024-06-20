@@ -42,7 +42,7 @@ const Navbar = () => {
         <Link
           href={"/"}
           className="text-2xl md:text-4xl text-black font-semibold flex items-center" 
-          style={{ textDecoration: 'none', height: '100%'}} 
+          style={{ textDecoration: 'none', height: '100%' }} 
         >
           PORTFOLIO
         </Link>
