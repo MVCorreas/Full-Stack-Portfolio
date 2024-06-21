@@ -71,11 +71,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#a8dadc] via-[#457b9d] to-[#1d3557] mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-          I am a driven Full Stack Developer with a unique blend of language expertise and coding proficiency. 
-          Skilled in React.js, Next.js, Node.js, HTML, CSS, and Javascript, among others, I specialize in creating appealing interfaces and optimizing user performance. 
-          My background in English translation enhances my clear communication, bridging diverse perspectives in global software development. 
-          Along with freelance Front End work, I have recently completed a Web and Mobile Design course and a Backend with Java course. 
-          I am commited to ongoing learning and excited to contribute my evolving expertise to dynamic teams.
+          I am a driven Full Stack Developer with a unique blend of language expertise and coding proficiency. I am quite astonished at the profound impact that technology is exerting on our well-being, and I am increasingly eager to take part in this generational headway. Skilled in React.js, Next.js, Node.js, HTML, CSS, and Javascript, among others, I am particularly keen for creating appealing interfaces and optimizing user performance. My background in English translation enhances my clear communication, bridging diverse perspectives in global software development. Along with freelance Full Stack Developer work, I have recently completed a Web and Mobile Design course and a Backend with Java course. I am firmly committed to ongoing learning and excited to contribute my evolving expertise to the exponential growth in web and mobile development for the benefit of our community.
           </p>
           <div className="flex flex-row justify-start mt-8 text-2xl">
         
