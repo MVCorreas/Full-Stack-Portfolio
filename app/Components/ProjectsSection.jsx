@@ -8,7 +8,7 @@ const projectsData = [
   {
     id: 1,
     title: "Rick & Morty",
-    description: "Individual Project, HENRY, 2023. SPA using React, NodeJS, Express and CSS Frameworks.",
+    description: "Individual Project, HENRY, 2023. SPA. Technologies: React.js, Node.js, Express and CSS Styled Components.",
     image: "/Rick&Morty.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/MVCorreas/Proyecto-Integrador",
@@ -17,7 +17,7 @@ const projectsData = [
   {
     id: 2,
     title: "Countrypedia",
-    description: "Individual Project, HENRY, 2023. SPA using React, NodeJS, Express, PostgreSQL and pure CSS.",
+    description: "Individual Project, HENRY, 2023. SPA. Technologies: React.js, Node.js, Express, PostgreSQL and CSS Styled Components.",
     image: "/Countrypedia.png",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/MVCorreas/ProyectoIntegrador-Countries",
@@ -26,7 +26,7 @@ const projectsData = [
   {
     id: 3,
     title: "Woofer",
-    description: "Group Project, HENRY, 2023. SPA using NextJS14, Express, PostgreSQL, Tailwind, among others.",
+    description: "Group Project, HENRY, 2023. SPA. Technologies: Next.js, Express, PostgreSQL, Tailwind, among others.",
     image: "/Woofer.png",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/germiiii/Woofer",
@@ -35,7 +35,7 @@ const projectsData = [
   {
     id: 4,
     title: "DecoPalets",
-    description: "Experimental project using technologies such as NextJS, Tailwind, MongoDB, and others. It resembles an e-commerce website using Paypal (in progress).",
+    description: "Experimental e-commerce project, 2024. Technologies: Next.js, Tailwind, MongoDB, and others (in progress).",
     image: "/Decopalets.png",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/MVCorreas/Next-Decopalets-Ts",
@@ -44,7 +44,7 @@ const projectsData = [
   {
     id: 5,
     title: "About Me",
-    description: "Experimental website built on SquareSpace. Just a few lines that relfect my inspiration and my path toward development.",
+    description: "SquareSpace website, 2024. Just a few lines that relfect my inspiration and path towards web development.",
     image: "/SquareSpace.png",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/MVCorreas",
