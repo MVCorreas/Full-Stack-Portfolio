@@ -11,7 +11,6 @@ import { useScrollPosition } from "../Hooks/useScrollPosition";
 const Skills = React.forwardRef(({ heading, hardSkills, softSkills }, ref) => {
   const skillsTabRef = React.useRef(null);
   const [isScrolled, setIsScrolled] = React.useState(false);
-  //const navbarDimensions = useResizeObserver(navbarMenuRef);
 
   useScrollPosition(
     ({ prevPos, currPos }) => {
@@ -22,12 +21,12 @@ const Skills = React.forwardRef(({ heading, hardSkills, softSkills }, ref) => {
   );
   return (
     <Jumbotron ref={skillsTabRef} fluid className="bg-white m-0" id="skills" style={{ borderRadius: "20px" }}>
-      <Container className="p-5 ">
+      <Container className="p-5">
         <h1 ref={skillsTabRef} className=" text-center text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#a8dadc] via-[#457b9d] to-[#1d3557] mb-4">
           {heading}
         </h1>
         <Tabs
-          className="skills-tabs text-2xl "
+          className="skills-tabs text-2xl bg-[#f1faee]"
           defaultActiveKey="hard-skills"
           id="skills-tabs"
           fill
