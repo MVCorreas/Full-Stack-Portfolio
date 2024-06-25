@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed mx-auto top-0 left-0 right-0 z-10 bg-[#a8dadc] bg-opacity-90 h-20">
-    <div className="flex lg:py-4 items-center justify-between mx-auto" style={{ height: '100%'}}>
+    <div className="flex lg:py-4 items-center justify-between mx-auto p-4" style={{ height: '100%'}}>
       <div className="flex container items-center">
         <Image 
         src="/Logo.png" 
