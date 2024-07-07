@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 import { transporter, mailOptions } from "../../../config/nodemailer";
 
 export async function POST(req) {
-  const data = await req.json(); // `req.json()` is used to parse the request body in the newer Next.js API routes.
+  const data = await req.json();
 
   if (!data || !data.name || !data.email || !data.subject || !data.message) {
     return NextResponse.json({ message: "Bad request" }, { status: 400 });
