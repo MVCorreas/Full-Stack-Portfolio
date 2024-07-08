@@ -1,23 +1,70 @@
 
 "use client"
-import Image from 'next/image'
-import Link from 'next/link';
-import { useState } from 'react';
+import {
+  Button,
+  Container,
+  FormControl,
+  FormErrorMessage,
+  FormLabel,
+  Heading,
+  Input,
+  Text,
+  Textarea,
+  useToast,
+  Link
+} from "@chakra-ui/react";
+import { useState } from "react";
+import { sendContactForm } from "../../lib/api";
+import Image from "next/image";
+
+
+const initValues = { name: "", email: "", subject: "", message: "" };
+
+const initState = { isLoading: false, error: "", values: initValues };
 
 export default function EmailSection() {
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('')
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const toast = useToast();
+  const [state, setState] = useState(initState);
+  const [touched, setTouched] = useState({});
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-   alert('Thanks for contacting me!')
-   setEmail('')
-   setMessage('')
-   setSubject('')
+  const { values, isLoading, error } = state;
+
+  const onBlur = ({ target }) =>
+    setTouched((prev) => ({ ...prev, [target.name]: true }));
+
+  const handleChange = ({ target }) =>
+    setState((prev) => ({
+      ...prev,
+      values: {
+        ...prev.values,
+        [target.name]: target.value,
+      },
+    }));
+
+  const onSubmit = async () => {
+    setState((prev) => ({
+      ...prev,
+      isLoading: true,
+    }));
+    try {
+      await sendContactForm(values);
+      setTouched({});
+      setState(initState);
+      toast({
+        title: "Message sent.",
+        status: "success",
+        duration: 2000,
+        position: "top",
+      });
+    } catch (error) {
+      setState((prev) => ({
+        ...prev,
+        isLoading: false,
+        error: error.message,
+      }));
+    }
   };
-  
+
   return (
     <section
       id="contact"
@@ -42,81 +89,101 @@ export default function EmailSection() {
         </div>
       </div>
 
-      <div>
-          <form className="flex flex-col" onSubmit={handleSubmit}>
-            <div className="mb-6">
-              <label
-                htmlFor="email"
-                className="text-black block mb-2 text-sm font-medium"
-              >
-                Your email
-              </label>
-              <input
-                name="email"
-                type="email"
-                id="email"
-                required
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="email@google.com"
-                value={email}
-                onChange={(e) => {
-                  setEmail(e.target.value)
-                }}
-              />
-            </div>
-            <div className="mb-6">
-              <label
-                htmlFor="subject"
-                className="text-black block text-sm mb-2 font-medium"
-              >
-                Subject
-              </label>
-              <input
-                name="subject"
-                type="text"
-                id="subject"
-                required
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Just saying hi"
-                value={subject}
-                onChange={(e) => {
-                  setSubject(e.target.value)
-                }}
-              />
-            </div>
-            <div className="mb-6">
-              <label
-                htmlFor="message"
-                className="text-black block text-sm mb-2 font-medium"
-              >
-                Message
-              </label>
-              <textarea
-                name="message"
-                id="message"
-                required
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Let's talk about..."
-                value={message}
-                onChange={(e) => {
-                  setMessage(e.target.value)
-                }}
-              />
-            </div>
-            <button
-              type="submit"
-              className="bg-gradient-to-r  from-[#a8dadc] via-[#457b9d] to-[#1d3557] text-white hover:bg-yellow-300 hover:text-black font-medium py-2.5 px-5 rounded-lg w-full"
-            >
-              Send Message
-            </button>
-          </form>
-        
-          {
-          emailSubmitted && (
-          <p className="text-green-500 text-sm mt-2">
-            Thank you for contacting me!
-          </p>
-        )} 
+      <div >
+      <Container maxW="550px" mt={8} >
+      {/* <Heading>Contact</Heading> */}
+      {error && (
+        <Text color="red.300" my={4} fontSize="xl">
+          {error}
+        </Text>
+      )}
+
+      <FormControl isRequired isInvalid={touched.name && !values.name} mb={5}>
+        <FormLabel>Name</FormLabel>
+        <Input
+          type="text"
+          name="name"
+          errorBorderColor="red.300"
+          style={{backgroundColor: 'RGBA(0, 0, 0, 0.92)', color: '#FFFFFF'}}
+          placeholder="Your name"          
+           value={values.name}
+          onChange={handleChange}
+          onBlur={onBlur}
+        />
+        <FormErrorMessage>Required</FormErrorMessage>
+      </FormControl>
+
+      <FormControl isRequired isInvalid={touched.email && !values.email} mb={5}>
+        <FormLabel>Email</FormLabel>
+        <Input
+          type="email"
+          name="email"
+          errorBorderColor="red.300"
+          placeholder="Your email"
+          style={{backgroundColor: 'RGBA(0, 0, 0, 0.92)', color: '#FFFFFF'}}
+          value={values.email}
+          onChange={handleChange}
+          onBlur={onBlur}
+        />
+        <FormErrorMessage>Required</FormErrorMessage>
+      </FormControl>
+
+      <FormControl
+        mb={5}
+        isRequired
+        isInvalid={touched.subject && !values.subject}
+      >
+        <FormLabel>Subject</FormLabel>
+        <Input
+          type="text"
+          name="subject"
+          placeholder="What do you want to talk about?"
+          errorBorderColor="red.300"
+          style={{backgroundColor: 'RGBA(0, 0, 0, 0.92)', color: '#FFFFFF'}}
+          value={values.subject}
+          onChange={handleChange}
+          onBlur={onBlur}
+        />
+        <FormErrorMessage>Required</FormErrorMessage>
+      </FormControl>
+
+      <FormControl
+        isRequired
+        isInvalid={touched.message && !values.message}
+        mb={5}
+      >
+        <FormLabel>Message</FormLabel>
+        <Textarea
+          type="text"
+          name="message"
+          placeholder="Message"
+          rows={4}
+          errorBorderColor="red.300"
+          style={{backgroundColor: 'RGBA(0, 0, 0, 0.92)', color: '#FFFFFF'}}
+          value={values.message}
+          onChange={handleChange}
+          onBlur={onBlur}
+        />
+        <FormErrorMessage>Required</FormErrorMessage>
+      </FormControl>
+
+      <button className="px-1 py-1 mb-4 rounded-full w-full sm:w-fit bg-gradient-to-r from-[#a8dadc] via-[#457b9d] to-[#1d3557] text-white border mt-3 lg:mt-0 transform transition-transform hover:scale-105"
+      variant="outline"
+        colorScheme="blue"
+        style={{color: '#a8dadc'}}
+        isLoading={isLoading}
+        disabled={
+          !values.name || !values.email || !values.subject || !values.message
+        }
+        onClick={onSubmit}
+  
+     
+        > <span className="block bg-[#f1faee] text-black rounded-full px-5 py-2 ">SUBMIT</span>
+   
+      </button>
+       
+    </Container>
+
       </div>
     </section>
   );
