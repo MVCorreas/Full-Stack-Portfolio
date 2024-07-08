@@ -167,10 +167,7 @@ export default function EmailSection() {
         <FormErrorMessage>Required</FormErrorMessage>
       </FormControl>
 
-      <button className="px-1 py-1 mb-4 rounded-full w-full sm:w-fit bg-gradient-to-r from-[#a8dadc] via-[#457b9d] to-[#1d3557] text-white border mt-3 lg:mt-0 transform transition-transform hover:scale-105"
-      variant="outline"
-        colorScheme="blue"
-        style={{color: '#a8dadc'}}
+      <Button colorScheme='teal' variant='solid' style={{borderRadius: '40px', padding: '20px'}}
         isLoading={isLoading}
         disabled={
           !values.name || !values.email || !values.subject || !values.message
@@ -178,9 +175,9 @@ export default function EmailSection() {
         onClick={onSubmit}
   
      
-        > <span className="block bg-[#f1faee] text-black rounded-full px-5 py-2 ">SUBMIT</span>
+        > Submit
    
-      </button>
+      </Button>
        
     </Container>
 
