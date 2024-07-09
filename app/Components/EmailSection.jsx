@@ -16,6 +16,7 @@ import {
 import { useState } from "react";
 import { sendContactForm } from "../../lib/api";
 import Image from "next/image";
+import theme from '../theme'
 
 
 const initValues = { name: "", email: "", subject: "", message: "" };
@@ -26,6 +27,7 @@ export default function EmailSection() {
   const toast = useToast();
   const [state, setState] = useState(initState);
   const [touched, setTouched] = useState({});
+  const [isHovered, setIsHovered] = useState(false);
 
   const { values, isLoading, error } = state;
 
@@ -81,105 +83,109 @@ export default function EmailSection() {
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/MVCorreas">
-            <Image src='/github-icon.svg' alt="Github Icon" width={60} height={60}/>
+            <Image src='/github-icon.svg' alt="Github Icon" width={60} height={60} />
           </Link>
           <Link href="https://www.linkedin.com/in/mar%C3%ADa-victoria-correas-148049b2/">
-            <Image src='/linkedin-icon.svg' alt="Linkedin Icon"  width={60} height={60}/>
+            <Image src='/linkedin-icon.svg' alt="Linkedin Icon" width={60} height={60} />
           </Link>
         </div>
       </div>
 
       <div >
-      <Container maxW="550px" mt={8} >
-      {/* <Heading>Contact</Heading> */}
-      {error && (
-        <Text color="red.300" my={4} fontSize="xl">
-          {error}
-        </Text>
-      )}
+        <Container maxW="550px" mt={8} >
+          {/* <Heading>Contact</Heading> */}
+          {error && (
+            <Text color="red.300" my={4} fontSize="xl">
+              {error}
+            </Text>
+          )}
 
-      <FormControl isRequired isInvalid={touched.name && !values.name} mb={5}>
-        <FormLabel>Name</FormLabel>
-        <Input
-          type="text"
-          name="name"
-          errorBorderColor="red.300"
-          style={{backgroundColor: 'RGBA(0, 0, 0, 0.92)', color: '#FFFFFF'}}
-          placeholder="Your name"          
-           value={values.name}
-          onChange={handleChange}
-          onBlur={onBlur}
-        />
-        <FormErrorMessage>Required</FormErrorMessage>
-      </FormControl>
+          <FormControl isRequired isInvalid={touched.name && !values.name} mb={5}>
+            <FormLabel>Name</FormLabel>
+            <Input
+              type="text"
+              name="name"
+              errorBorderColor="red.300"
+              style={{ backgroundColor: 'RGBA(0, 0, 0, 0.92)', color: '#FFFFFF' }}
+              placeholder="Your name"
+              value={values.name}
+              onChange={handleChange}
+              onBlur={onBlur}
+            />
+            <FormErrorMessage>Required</FormErrorMessage>
+          </FormControl>
 
-      <FormControl isRequired isInvalid={touched.email && !values.email} mb={5}>
-        <FormLabel>Email</FormLabel>
-        <Input
-          type="email"
-          name="email"
-          errorBorderColor="red.300"
-          placeholder="Your email"
-          style={{backgroundColor: 'RGBA(0, 0, 0, 0.92)', color: '#FFFFFF'}}
-          value={values.email}
-          onChange={handleChange}
-          onBlur={onBlur}
-        />
-        <FormErrorMessage>Required</FormErrorMessage>
-      </FormControl>
+          <FormControl isRequired isInvalid={touched.email && !values.email} mb={5}>
+            <FormLabel>Email</FormLabel>
+            <Input
+              type="email"
+              name="email"
+              errorBorderColor="red.300"
+              placeholder="Your email"
+              style={{ backgroundColor: 'RGBA(0, 0, 0, 0.92)', color: '#FFFFFF' }}
+              value={values.email}
+              onChange={handleChange}
+              onBlur={onBlur}
+            />
+            <FormErrorMessage>Required</FormErrorMessage>
+          </FormControl>
 
-      <FormControl
-        mb={5}
-        isRequired
-        isInvalid={touched.subject && !values.subject}
-      >
-        <FormLabel>Subject</FormLabel>
-        <Input
-          type="text"
-          name="subject"
-          placeholder="What do you want to talk about?"
-          errorBorderColor="red.300"
-          style={{backgroundColor: 'RGBA(0, 0, 0, 0.92)', color: '#FFFFFF'}}
-          value={values.subject}
-          onChange={handleChange}
-          onBlur={onBlur}
-        />
-        <FormErrorMessage>Required</FormErrorMessage>
-      </FormControl>
+          <FormControl
+            mb={5}
+            isRequired
+            isInvalid={touched.subject && !values.subject}
+          >
+            <FormLabel>Subject</FormLabel>
+            <Input
+              type="text"
+              name="subject"
+              placeholder="What do you want to talk about?"
+              errorBorderColor="red.300"
+              style={{ backgroundColor: 'RGBA(0, 0, 0, 0.92)', color: '#FFFFFF' }}
+              value={values.subject}
+              onChange={handleChange}
+              onBlur={onBlur}
+            />
+            <FormErrorMessage>Required</FormErrorMessage>
+          </FormControl>
 
-      <FormControl
-        isRequired
-        isInvalid={touched.message && !values.message}
-        mb={5}
-      >
-        <FormLabel>Message</FormLabel>
-        <Textarea
-          type="text"
-          name="message"
-          placeholder="Message"
-          rows={4}
-          errorBorderColor="red.300"
-          style={{backgroundColor: 'RGBA(0, 0, 0, 0.92)', color: '#FFFFFF'}}
-          value={values.message}
-          onChange={handleChange}
-          onBlur={onBlur}
-        />
-        <FormErrorMessage>Required</FormErrorMessage>
-      </FormControl>
+          <FormControl
+            isRequired
+            isInvalid={touched.message && !values.message}
+            mb={5}
+          >
+            <FormLabel>Message</FormLabel>
+            <Textarea
+              type="text"
+              name="message"
+              placeholder="Message"
+              rows={4}
+              errorBorderColor="red.300"
+              style={{ backgroundColor: 'RGBA(0, 0, 0, 0.92)', color: '#FFFFFF' }}
+              value={values.message}
+              onChange={handleChange}
+              onBlur={onBlur}
+            />
+            <FormErrorMessage>Required</FormErrorMessage>
+          </FormControl>
 
-      <Button colorScheme='teal' variant='solid' style={{borderRadius: '40px', padding: '20px'}}
-        isLoading={isLoading}
-        disabled={
-          !values.name || !values.email || !values.subject || !values.message
-        }
-        onClick={onSubmit}
-  
-     
-        > Submit
-   
-      </Button>
-       
-    </Container>
+          <Button
+            style={{
+              borderRadius: "40px",
+              padding: "30px",
+              backgroundColor: isHovered ? "pink" : theme.colors.darkRed,
+              color: "white",
+            }}
+            isLoading={isLoading}
+            disabled={!values.name || !values.email || !values.subject || !values.message}
+            onClick={onSubmit}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            Submit
+          </Button>
+
+        </Container>
 
       </div>
     </section>
