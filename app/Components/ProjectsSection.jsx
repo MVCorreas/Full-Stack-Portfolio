@@ -44,11 +44,11 @@ const projectsData = [
   {
     id: 5,
     title: "About Me",
-    description: "SquareSpace website, 2024. Just a few lines that relfect my inspiration and path towards web development.",
-    image: "/SquareSpace.png",
+    description: "SPA, 2024. Technologies: Next.js, CSS Modules. Personal project reflecting my inspiration and path towards web development.",
+    image: "/Personal-Page.png",
     tag: ["All", "Web", "Mobile"],
-    gitUrl: "https://github.com/MVCorreas",
-    previewUrl: "https://www.squarespace.com/",
+    gitUrl: "https://github.com/MVCorreas/MVCorreas-PersonalPage",
+    previewUrl: "https://github.com/MVCorreas/",
   }
 ]
 
