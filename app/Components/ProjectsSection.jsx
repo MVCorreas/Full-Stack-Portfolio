@@ -48,7 +48,7 @@ const projectsData = [
     image: "/Personal-Page.png",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/MVCorreas/MVCorreas-PersonalPage",
-    previewUrl: "https://github.com/MVCorreas/",
+    previewUrl: "https://mv-correas-personal-page.vercel.app/",
   }
 ]
 
