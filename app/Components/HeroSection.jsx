@@ -70,7 +70,7 @@ const HeroSection = () => {
               <br />
               <Link
                 href={
-                  "https://docs.google.com/document/d/1NatXhdYZvc_D87DRaYunSQz9ZbbX-pQzlyR-coXYB0o/edit?usp=sharing"
+                  "https://drive.google.com/file/d/10_WQ5w59wJSodFyQQXk4Q1OAv-GDSPEz/view?usp=sharing"
                 }
               >
                 <Button
