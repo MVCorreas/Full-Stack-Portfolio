@@ -100,7 +100,7 @@ const HeroSection = () => {
             }}
           >
             <Image
-              src="/ProfilePic.jpg"
+              src="/Profile2.jpg"
               alt="portfolio"
               className="absolute left-0 top-0 w-full h-full object-cover"
               layout="fill"
