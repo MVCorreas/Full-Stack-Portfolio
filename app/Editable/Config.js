@@ -3,15 +3,14 @@ export const skills = {
   show: true,
   heading: "Skills",
   hardSkills: [
-    { name: "Javascript", value: 70 },
-
-    { name: "Tailwind", value: 75 },
-    { name: "Next.js", value: 68 },
-    { name: "React.js", value: 65 },
+    { name: "Javascript", value: 75 },
+    { name: "Next.js", value: 80 },
+    { name: "React.js", value: 75 },
     { name: "Node.js", value: 65 },
-    { name: "HTML5", value: 85 },
-    { name: "CSS3", value: 90 },
-    { name: "Strapi", value: 80 },
+    { name: "Express.js", value: 65 },
+    { name: "Prisma", value: 75 },
+    { name: "PostgreSQL", value: 65 },
+    { name: "Docker", value: 80 },
   ],
   softSkills: [
     { name: "Goal-Oriented", value: 95 },
