@@ -31,24 +31,6 @@ const projectsData = [
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/germiiii/Woofer",
     previewUrl: "https://woofer-taupe.vercel.app/",
-  },
-  {
-    id: 4,
-    title: "DecoPalets",
-    description: "Experimental e-commerce project, 2024. Technologies: Next.js, Tailwind, MongoDB, and others (in progress).",
-    image: "/Decopalets.png",
-    tag: ["All", "Web", "Mobile"],
-    gitUrl: "https://github.com/MVCorreas/Next-Decopalets-Ts",
-    previewUrl: "https://next-decopalets-ts.vercel.app/",
-  },
-  {
-    id: 5,
-    title: "About Me",
-    description: "SPA, 2024. Technologies: Next.js, CSS Modules. Personal project reflecting my inspiration and path towards web development.",
-    image: "/Personal-Page.png",
-    tag: ["All", "Web", "Mobile"],
-    gitUrl: "https://github.com/MVCorreas/MVCorreas-PersonalPage",
-    previewUrl: "https://mv-correas-personal-page.vercel.app/",
   }
 ]
 
@@ -73,9 +55,9 @@ const ProjectsSection = () => {
   return (
     <section id="projects">
       <h2 className="text-center text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#a8dadc] via-[#457b9d] to-[#1d3557] mt-4 mb-8 md:mb-12">
-        My Projects
+        Some Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      {/* <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
           onClick={handleTagChange}
           name="All"
@@ -91,7 +73,7 @@ const ProjectsSection = () => {
           name="Mobile"
           isSelected={tag === "Mobile"}
         />
-      </div>
+      </div> */}
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
           <motion.li
