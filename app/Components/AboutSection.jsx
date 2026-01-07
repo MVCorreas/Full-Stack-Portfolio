@@ -11,10 +11,12 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>JavaScript</li>
         <li>React</li>
-        <li>Strapi</li>
+        <li>Next.js</li>
         <li>Node.js</li>
+        <li>Express.js</li>
+        <li>Prisma</li>
         <li>PostgreSQL</li>
-        <li>SQL Server</li>
+        <li>Docker</li>
       </ul>
     ),
   },
@@ -24,7 +26,6 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Fullstack Development, HENRY</li>
-        <li>Programming Basics, Egg Education</li>
         <li>English Teaching, National University of Cuyo, Argentina</li>
       </ul>
     ),
@@ -35,11 +36,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Full Stack Developer - Henry</li>
-        <li>Porgamming Basics - Egg Education</li>
-        <li>Intro to Java - Edutin Academy</li>
-        <li>Data Structures and Backend with Java - Coursera</li>
         <li>UX UI Web and Mobile Design - UDEMY</li>
-        {/* <li>Flutter - UDEMY</li> */}
         <li>Certificate of Proficiency in English, Cambridge University</li>
       </ul>
     ),
@@ -77,16 +74,12 @@ const AboutSection = () => {
             expertise and coding proficiency. I am quite astonished at the
             profound impact that technology is exerting on our well-being, and I
             am increasingly eager to take part in this generational headway.
-            Skilled in React.js, Next.js, Node.js, HTML, CSS, and Javascript,
-            among others, I am particularly keen for creating appealing
-            interfaces and optimizing user performance. My background in English
-            translation enhances my clear communication, bridging diverse
-            perspectives in global software development. Along with freelance
-            Full Stack Developer work, I have recently completed a Web and
-            Mobile Design course and a Backend with Java course. I am firmly
-            committed to ongoing learning and excited to contribute my evolving
-            expertise to the exponential growth in web and mobile development
-            for the benefit of our community.
+            Skilled in Javascript, React.js, Next.js, Node.js, Express.js, and
+            more, I am particularly keen for creating appealing interfaces and
+            optimizing user performance. I am firmly committed to ongoing
+            learning and excited to contribute my evolving expertise to the
+            exponential growth in web and mobile development for the benefit of
+            our community.
           </p>
           <div className="flex flex-row justify-start mt-8 text-2xl">
             <TabButton
