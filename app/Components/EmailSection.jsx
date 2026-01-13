@@ -88,7 +88,7 @@ export default function EmailSection() {
             />
           </Link>
           <Link
-            href="https://www.linkedin.com/in/mar%C3%ADa-victoria-correas-148049b2/"
+            href="https://www.linkedin.com/in/maria-victoria-correas-148049b2/"
             className="color-[#1d3557]"
           >
             <Image
